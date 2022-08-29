@@ -8,7 +8,7 @@ locals {
       // create entry
     }
   }
-  layer = "services"
+  layer = "applications"
   type  = "base"
   application_branch = "main"
   namespace = var.namespace
