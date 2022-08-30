@@ -1,6 +1,6 @@
-name: ""
+name: "gitops-guestbook-module"
 type: gitops
-description: ""
+description: "That module will add a new Argo CD config to deploy the guestbook application"
 tags:
   - tools
   - gitops
