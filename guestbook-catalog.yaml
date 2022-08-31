@@ -4,6 +4,9 @@ categories:
   - category: custom_module
     categoryName: custom_module
     selection: multiple
+    id: https://github.com/thomassuedbroecker/gitops-terraform-guestbook
+      group: ""
+      displayName: gitops-guestbook-module
     modules:
       - cloudProvider: ""
         softwareProvider: ""
@@ -49,3 +52,4 @@ categories:
             moduleRef:
               id: gitops
               output: sealed_secrets_cert
+   
