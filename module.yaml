@@ -1,4 +1,4 @@
-name: "gitops-guestbook-module"
+name: "gitops-terraform-guestbook"
 type: gitops
 description: "That module will add a new Argo CD config to deploy the guestbook application"
 tags:
