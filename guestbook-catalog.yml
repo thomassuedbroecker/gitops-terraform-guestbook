@@ -7,11 +7,11 @@ categories:
     modules:
       - cloudProvider: ""
         softwareProvider: ""
-        id: https://github.com/thomassuedbroecker/gitops-terraform-guestbook
+        id: github.com/thomassuedbroecker/gitops-terraform-guestbook
         group: ""
         displayName: gitops-guestbook-module
         type: gitops
-        name: "gitops-guestbook-module"
+        name: gitops-guestbook-module
         type: gitops
         description: "That module will add a new Argo CD config to deploy the guestbook application"
         tags:
