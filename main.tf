@@ -1,5 +1,5 @@
 locals {
-  name          = "guestbook-module"
+  name          = "gitops-guestbook-module"
   bin_dir       = module.setup_clis.bin_dir
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
