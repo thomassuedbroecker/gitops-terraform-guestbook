@@ -8,6 +8,9 @@ categories:
       - cloudProvider: ""
         softwareProvider: ""
         type: gitops
+        id: github.com/thomassuedbroecker/gitops-terraform-guestbook
+        group: ""
+        displayName: gitops-terraform-guestbook
         name: gitops-terraform-guestbook
         description: asdf
         tags:
@@ -144,6 +147,3 @@ categories:
                 description: The layer where the module is deployed
               - name: type
                 description: The type of module where the module is deployed
-        id: github.com/thomassuedbroecker/gitops-terraform-guestbook
-        group: ""
-        displayName: gitops-terraform-guestbook
