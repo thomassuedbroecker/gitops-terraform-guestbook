@@ -5,7 +5,21 @@ locals {
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
     helm_guestbook = {
-      // create entry
+      "replicaCount": 1
+      "image.repository" = "gcr.io/heptio-images/ks-guestbook-demo"
+      "image.tag" = "0.1"
+      "image.pullPolicy" = "IfNotPresent"
+      "service.type" = "ClusterIP"
+      "service.port" = "80"
+      "ingress.enabled" = "false"
+      "ingress.annotations" = null
+      "ingress.path" = "/"
+      "ingress.hosts" = ["chart-example.local"]
+      "ingress.tls" = []
+      "resources" = null
+      "nodeSelector" = null
+      "tolerations" = null
+      "affinity" = null
     }
   }
   layer = "applications"
