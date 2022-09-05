@@ -66,6 +66,7 @@ variable "git_credentials" {
 variable "namespace" {
   type        = string
   description = "The namespace where the application should be deployed"
+  default = ""
 }
 
 variable "kubeseal_cert" {
@@ -78,23 +79,6 @@ variable "server_name" {
   type        = string
   description = "The name of the server"
   default     = "default"
-}
-
-variable "enable_sso" {
-  type        = bool
-  description = "Flag indicating if oauth should be applied (only available for OpenShift)"
-  default     = true
-}
-
-variable "tls_secret_name" {
-  description = "The name of the secret containing the tls certificate values"
-  default     = ""
-}
-
-variable "cluster_ingress_hostname" {
-  type        = string
-  description = "Ingress hostname of the cluster."
-  default     = ""
 }
 
 variable "cluster_type" {

@@ -6,6 +6,9 @@ The objective is to compare [GitOps template](https://github.com/cloud-native-to
 | `module.yaml` | verified | verified | verified | all have the same content execpt the discription is a bit different |
 | `main.tf` | 62 lines | 70 lines (contains a `cluster type` in the locals, the values content is filled) | 80 lines (contains a `cluster type` in the locals, the values content is filled)  |  Only the variables are different in `guestbook` and `swagger editor`. |
 | `create-yaml.sh` | 11 lines | 19 lines (contains the implementation to copy the chart) | 19 lines (contains the implementation to copy the chart) | Difference is only the implementation to copy the helm chart! |
+| `outputs.tf` | 36 lines | 36 lines | 36 lines | All the same. |
+| `variable.tf` | 81 lines | 103 lines (contains four additional variables `enable_sso`, `tls_secret_name`, `cluster_ingress_hostname`, `cluster_type`) | 87 lines (modified `namespace` with default = "" and contains `cluster_type`)| Some different configurations. |
+| `versions.tf` | 3 lines | 3 lines | 3 lines |  All the same |
 
 # Starter kit for a Terraform GitOps module
 
