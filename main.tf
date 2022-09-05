@@ -22,7 +22,7 @@ locals {
       "affinity" = null
     }
   }
-  layer = "applications"
+  layer = "1-applications"
   type  = "base"
   application_branch = "main"
   namespace = var.namespace
