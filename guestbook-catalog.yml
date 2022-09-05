@@ -26,6 +26,10 @@ categories:
                 refs:
                   - source: github.com/cloud-native-toolkit/terraform-tools-gitops.git
                     version: '>= 1.1.0'
+              - id: namespace
+                refs:
+                  - source: github.com/cloud-native-toolkit/terraform-gitops-namespace.git
+                    version: ">= 1.0.0"
             variables:
               - name: gitops_config
                 description: Config information regarding the gitops repo structure
@@ -58,7 +62,7 @@ categories:
                 moduleRef:
                   id: gitops
                   output: server_name
-            version: v0.0.9
+            version: v0.0.10
             outputs:
               - name: name
                 description: The name of the module
