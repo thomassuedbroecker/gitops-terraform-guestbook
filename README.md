@@ -1,3 +1,15 @@
+# Compare
+
+The objective is to compare [GitOps template](https://github.com/cloud-native-toolkit/template-terraform-gitops/blob/main/module.yaml), [Swagger editor module](https://github.com/cloud-native-toolkit/terraform-gitops-swagger-editor) and the [guestbook module](https://github.com/thomassuedbroecker/gitops-terraform-guestbook) implementation.
+
+| Verified | [GitOps template](https://github.com/cloud-native-toolkit/template-terraform-gitops/blob/main/module.yaml) | [Swagger editor example](https://github.com/cloud-native-toolkit/terraform-gitops-swagger-editor) | [Own guestbook module](https://github.com/thomassuedbroecker/gitops-terraform-guestbook) | Findings |
+| `module.yaml` | verified | verified | verified | all have the same content execpt the discription is a bit different |
+| `main.tf` | 62 lines | 70 lines (contains a `cluster type` in the locals, the values content is filled) | 80 lines (contains a `cluster type` in the locals, the values content is filled)  |  Only the variables are different in `guestbook` and `swagger editor`. |
+| `create-yaml.sh` | 11 lines | 19 lines (contains the implementation to copy the chart) | 19 lines (contains the implementation to copy the chart) | Difference is only the implementation to copy the helm chart! |
+| `outputs.tf` | 36 lines | 36 lines | 36 lines | All the same. |
+| `variable.tf` | 81 lines | 103 lines (contains four additional variables `enable_sso`, `tls_secret_name`, `cluster_ingress_hostname`, `cluster_type`) | 87 lines (modified `namespace` with default = "" and contains `cluster_type`)| Some different configurations. |
+| `versions.tf` | 3 lines | 3 lines | 3 lines |  All the same |
+
 # Starter kit for a Terraform GitOps module
 
 This is a Starter kit to help with the creation of Terraform modules. The basic structure of a Terraform module is fairly
