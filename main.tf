@@ -11,7 +11,7 @@ locals {
       "image.tag" = "0.1"
       "image.pullPolicy" = "IfNotPresent"
       "service.type" = "ClusterIP"
-      "service.port" = "80"
+      "service.port" = "8080"
       "ingress.enabled" = "false"
       "ingress.annotations" = ""
       "ingress.path" = "/"
